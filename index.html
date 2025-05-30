@@ -9,8 +9,18 @@
     />
     <title>Document</title>
   </head>
-  <body>
-    <div class="bg-[url(./images/banner-bg.jpg)] bg-blue-600 px-20 py-10">
+  <style>
+    .top-bg-img{
+        background-image: url(./images/banner-bg.jpg.jpeg);
+        background-size: cover;
+    }
+    .banner-img{
+        background-image: url(./images/banner-image.jpg.jpeg);
+        background-size: cover;
+    }
+  </style>
+  <body class="mx-auto">
+    <div class="top-bg-img px-20 pt-10 pb-40 rounded-b-3xl">
       <div class="flex justify-between">
         <img src="./images/logo.png" alt="Company logo" />
         <ul class="flex items-center justify-between w-1/2 text-white">
@@ -31,26 +41,109 @@
           </li>
         </ul>
       </div>
-      <div class="flex justify-between mt-20">
+      <div class="flex justify-between mt-20 pt-10">
         <div class="text-white">
-          <p class="">WELCOME TO LUGX</p>
+          <p class="font-semibold text-lg py-5 tracking-wide">WELCOME TO LUGX</p>
           <h1 class="font-black text-5xl w-2/3">
             BEST GAMING SITE EVER! <img src="./images/caption-dec.png" class="ml-20 pl-10" alt="" />
           </h1>
-          <p class="w-2/3">
+          <p class="w-2/3 leading-7 mt-10">
             LUGX Gaming is free bootstrap 5 HTML CSS website template for your
             gaming websites. You can download and use tihs layout for
             commerscial purposes. Please tell your friends about TemplateMO
           </p>
-          <div class="h-10 rounded-2xl">
-            <input type="text" class="" />
-            <button class="ruonded-2xl"></button>
+          <div class="rounded-3xl mt-20 bg-white flex justify-between w-3/5">
+            <input type="text" placeholder="Try something" class="rounded-l-3xl px-10 py-3 text-black" />
+            <button class="bg-red-400 px-10 py-3 rounded-3xl font-bold">Search now</button>
           </div>
         </div>
-        <div class="">
-            <img src="./images/banner-image.jpg.jpeg" alt="">
+        <div class="banner-img w-3/5 rounded-3xl flex">
+            <p class="font-extrabold absolute right-20 mr-5 mt-5 bg-blue-500 font-black text-xl px-4 py-2 rounded-3xl text-white">$22</p>
+            <p class="bg-red-400 rounded-full py-10 px-5 font-black text-3xl text-white self-end">-40%</p>
         </div>
       </div>
     </div>
+    <div class="flex justify-between py-20 mx-20 -mt-40">
+        <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+            <img src="./images/featured-01.png" class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5" alt="free download">
+            <h1 class="font-extrabold pt-5 px-5">Free download</h1>
+        </div>
+        <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+            <img src="./images/featured-02.png" class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5" alt="free download">
+            <h1 class="font-extrabold pt-5 px-5">User More</h1>
+        </div>
+        <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+            <img src="./images/featured-03.png" class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5" alt="free download">
+            <h1 class="font-extrabold pt-5 px-5">Reply ready</h1>
+        </div>
+        <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+            <img src="./images/featured-04.png" class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5" alt="free download">
+            <h1 class="font-bold text-xl pt-5 px-5">Easy layout</h1>
+        </div>
+    </div>
+    <div class="flex justify-between px-20 mt-20">
+        <div class="">
+            <p class="text-red-500 font-extrabold tracking-wider">Trending</p>
+            <h1 class="font-black text-4xl">Trending Games</h1>
+        </div>
+        <button class="px-10 bg-red-400 rounded-full text-white hover:bg-blue-600 font-bold">
+            View
+        </button>
+    </div>
+    <div class="flex flex-wrap justify-between pt-20 mx-20">
+        <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+            <div class="flex">
+                <img src="./images/categories-05.jpg.jpeg" class="w-full h-2/3 rounded-2xl" alt="free download">
+                <p class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"><strike>$28</strike><br>$22</p>
+            </div>
+            <div class="flex justify-between px-5">
+                <div class="mt-5">
+                    <p class="mt-2 text-gray-500">Action</p>
+                    <h1 class="font-extrabold group-hover:text-blue-500">Assassin Creed</h1>
+                </div>
+                <img src="./images/store.png" alt="" class="w-1/5 self-center p-2 bg-red-400 rounded-full group-hover:bg-blue-500 h-1/2">
+            </div>
+        </div>
+        <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+            <div class="flex">
+                <img src="./images/categories-05.jpg.jpeg" class="w-full h-2/3 rounded-2xl" alt="free download">
+                <p class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white">$22</p>
+            </div>
+            <div class="flex justify-between px-5">
+                <div class="mt-5">
+                    <p class="mt-2 text-gray-500">Action</p>
+                    <h1 class="font-extrabold group-hover:text-blue-500">Assassin Creed</h1>
+                </div>
+                <img src="./images/store.png" alt="" class="w-1/5 self-center p-2 bg-red-400 rounded-full group-hover:bg-blue-500 h-1/2">
+            </div>
+        </div>
+        <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+            <div class="flex">
+                <img src="./images/categories-05.jpg.jpeg" class="w-full h-2/3 rounded-2xl" alt="free download">
+                <p class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white">$22</p>
+            </div>
+            <div class="flex justify-between px-5">
+                <div class="mt-5">
+                    <p class="mt-2 text-gray-500">Action</p>
+                    <h1 class="font-extrabold group-hover:text-blue-500">Assassin Creed</h1>
+                </div>
+                <img src="./images/store.png" alt="" class="w-1/5 self-center p-2 bg-red-400 rounded-full group-hover:bg-blue-500 h-1/2">
+            </div>
+        </div>
+        <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+            <div class="flex">
+                <img src="./images/categories-05.jpg.jpeg" class="w-full h-2/3 rounded-2xl" alt="free download">
+                <p class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white">$22</p>
+            </div>
+            <div class="flex justify-between px-5">
+                <div class="mt-5">
+                    <p class="mt-2 text-gray-500">Action</p>
+                    <h1 class="font-extrabold group-hover:text-blue-500">Assassin Creed</h1>
+                </div>
+                <img src="./images/store.png" alt="" class="w-1/5 self-center p-2 bg-red-400 rounded-full group-hover:bg-blue-500 h-1/2">
+            </div>
+        </div>
+    </div>
+    <br><br>
   </body>
 </html>
