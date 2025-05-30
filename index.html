@@ -3,50 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css"
-      rel="stylesheet"
-    /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
   </head>
-  <style>
-    .top-bg-img {
-      background-image: url(./images/banner-bg.jpg.jpeg);
-      background-size: cover;
-    }
-    .footer-bg-img {
-      background-image: url(./images/footer-bg.jpeg);
-      background-size: cover;
-    }
-    .banner-img {
-      background-image: url(./images/banner-image.jpg.jpeg);
-      background-size: cover;
-    }
-    .rounded-5xl {
-      border-radius: 10rem;
-    }
-    .rounded-b-5xl {
-      border-bottom-left-radius: 10rem;
-      border-bottom-right-radius: 10rem;
-    }
-  </style>
   <body class="mx-auto">
     <!-- top nav -->
-    <div class="top-bg-img px-20 pt-10 pb-40 rounded-b-5xl">
+    <div
+      class="bg-[url('./images/banner-bg.jpg.jpeg')] bg-[cover] px-20 pt-10 pb-40 rounded-b-[10rem]"
+    >
       <div class="flex justify-between">
         <img src="./images/logo.png" alt="Company logo" />
         <ul class="flex items-center justify-between w-1/2 text-white">
-          <li class="bg-white bg-opacity-30 py-2 px-4 rounded-3xl">Home</li>
-          <li class="hover:bg-white hover:bg-opacity-30 py-2 px-3 rounded-3xl">
-            Our shop
-          </li>
-          <li class="hover:bg-white hover:bg-opacity-30 py-2 px-3 rounded-3xl">
+          <li class="bg-white/18 py-2 px-4 rounded-3xl">Home</li>
+          <li class="hover:bg-white/18 py-2 px-3 rounded-3xl">Our shop</li>
+          <li class="hover:bg-white/18 py-2 px-3 rounded-3xl">
             Product Details
           </li>
-          <li class="hover:bg-white hover:bg-opacity-30 py-2 px-3 rounded-3xl">
-            Contact us
-          </li>
+          <li class="hover:bg-white/18 py-2 px-3 rounded-3xl">Contact us</li>
           <li class="">
             <button class="py-2 px-5 bg-red-400 rounded-3xl font-bold">
               Sign in
@@ -74,12 +47,16 @@
               placeholder="Try something"
               class="rounded-l-3xl px-10 py-3 text-black"
             />
-            <button class="bg-red-400 px-10 py-3 rounded-3xl font-bold">
+            <button
+              class="bg-red-400 hover:bg-blue-500 px-10 py-3 rounded-3xl font-bold"
+            >
               Search now
             </button>
           </div>
         </div>
-        <div class="banner-img w-3/5 rounded-3xl flex">
+        <div
+          class="bg-[url('./images/banner-image.jpg.jpeg')] w-3/5 rounded-3xl flex"
+        >
           <p
             class="font-extrabold absolute right-20 mr-5 mt-5 bg-blue-500 font-black text-xl px-4 py-2 rounded-3xl text-white"
           >
@@ -256,7 +233,7 @@
 
     <!-- most played -->
 
-    <div class="rounded-5xl bg-gray-100 py-10 mt-40">
+    <div class="rounded-[10rem] bg-gray-100 py-10 mt-40">
       <div class="flex justify-between px-20 mt-20">
         <div class="">
           <p class="text-red-500 font-extrabold tracking-wider">Top Games</p>
@@ -283,7 +260,11 @@
             <h1 class="font-extrabold group-hover:text-blue-500 pb-5">
               Assassin Creed
             </h1>
-            <button class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500">Explore</button>
+            <button
+              class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500"
+            >
+              Explore
+            </button>
           </div>
         </div>
         <div class="rounded-2xl shadow-xl w-40 group bg-white">
@@ -299,7 +280,11 @@
             <h1 class="font-extrabold group-hover:text-blue-500 pb-5">
               Assassin Creed
             </h1>
-            <button class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500">Explore</button>
+            <button
+              class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500"
+            >
+              Explore
+            </button>
           </div>
         </div>
         <div class="rounded-2xl shadow-xl w-40 group bg-white">
@@ -315,7 +300,11 @@
             <h1 class="font-extrabold group-hover:text-blue-500 pb-5">
               Assassin Creed
             </h1>
-            <button class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500">Explore</button>
+            <button
+              class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500"
+            >
+              Explore
+            </button>
           </div>
         </div>
         <div class="rounded-2xl shadow-xl w-40 group bg-white">
@@ -331,7 +320,11 @@
             <h1 class="font-extrabold group-hover:text-blue-500 pb-5">
               Assassin Creed
             </h1>
-            <button class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500">Explore</button>
+            <button
+              class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500"
+            >
+              Explore
+            </button>
           </div>
         </div>
         <div class="rounded-2xl shadow-xl w-40 group bg-white">
@@ -347,7 +340,11 @@
             <h1 class="font-extrabold group-hover:text-blue-500 pb-5">
               Assassin Creed
             </h1>
-            <button class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500">Explore</button>
+            <button
+              class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500"
+            >
+              Explore
+            </button>
           </div>
         </div>
         <div class="rounded-2xl shadow-xl w-40 group bg-white">
@@ -363,70 +360,120 @@
             <h1 class="font-extrabold group-hover:text-blue-500 pb-5">
               Assassin Creed
             </h1>
-            <button class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500">Explore</button>
+            <button
+              class="bg-red-400 text-white font-extrabold py-2 px-4 mx-auto rounded-5xl absolute -mt-4 -ml-10 group-hover:bg-blue-500"
+            >
+              Explore
+            </button>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- top cagories -->
-    
-    <div class="text-center mt-20">
-        <p class="text-red-500 font-extrabold tracking-wider">Trending</p>
-        <h1 class="font-black text-4xl pt-5">Trending Games</h1>
     </div>
 
-    
+    <!-- top cagories -->
+
+    <div class="text-center mt-20">
+      <p class="text-red-500 font-extrabold tracking-wider">Trending</p>
+      <h1 class="font-black text-4xl pt-5">Trending Games</h1>
+    </div>
+
     <div class="flex flex-wrap justify-between pt-20 mx-20">
-      <div class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center">
-            <h1 class="text-white font-bold mt-5">Action</h1>
-          <img
-            src="./images/categories-05.jpg.jpeg"
-            class="w-full h-3/4 rounded-2xl"
-            alt="free download"
-          />
+      <div
+        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+      >
+        <h1 class="text-white font-bold mt-5">Action</h1>
+        <img
+          src="./images/categories-05.jpg.jpeg"
+          class="w-full h-3/4 rounded-2xl"
+          alt="free download"
+        />
       </div>
-      <div class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center">
-            <h1 class="text-white font-bold mt-5">Action</h1>
-          <img
-            src="./images/categories-05.jpg.jpeg"
-            class="w-full h-3/4 rounded-2xl"
-            alt="free download"
-          />
+      <div
+        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+      >
+        <h1 class="text-white font-bold mt-5">Action</h1>
+        <img
+          src="./images/categories-05.jpg.jpeg"
+          class="w-full h-3/4 rounded-2xl"
+          alt="free download"
+        />
       </div>
-      <div class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center">
-            <h1 class="text-white font-bold mt-5">Action</h1>
-          <img
-            src="./images/categories-05.jpg.jpeg"
-            class="w-full h-3/4 rounded-2xl"
-            alt="free download"
-          />
+      <div
+        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+      >
+        <h1 class="text-white font-bold mt-5">Action</h1>
+        <img
+          src="./images/categories-05.jpg.jpeg"
+          class="w-full h-3/4 rounded-2xl"
+          alt="free download"
+        />
       </div>
-      <div class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center">
-            <h1 class="text-white font-bold mt-5">Action</h1>
-          <img
-            src="./images/categories-05.jpg.jpeg"
-            class="w-full h-3/4 rounded-2xl"
-            alt="free download"
-          />
+      <div
+        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+      >
+        <h1 class="text-white font-bold mt-5">Action</h1>
+        <img
+          src="./images/categories-05.jpg.jpeg"
+          class="w-full h-3/4 rounded-2xl"
+          alt="free download"
+        />
       </div>
-      <div class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center">
-            <h1 class="text-white font-bold mt-5">Action</h1>
-          <img
-            src="./images/categories-05.jpg.jpeg"
-            class="w-full h-3/4 rounded-2xl"
-            alt="free download"
-          />
+      <div
+        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+      >
+        <h1 class="text-white font-bold mt-5">Action</h1>
+        <img
+          src="./images/categories-05.jpg.jpeg"
+          class="w-full h-3/4 rounded-2xl"
+          alt="free download"
+        />
       </div>
     </div>
 
     <!-- shop -->
-    
-    <!-- footer -->
-    
-    <div class="footer-bg-img pb-20 pt-5 rounded-t-full mt-20 text-white text-center">
-        <p class="">Copyright © 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo</p>
+    <div class="absolute flex mt-60 px-20">
+      <div class="rounded-3xl w-120 bg-gray-100 p-20">
+        <p class="text-red-400 text-lg">our shop</p>
+        <h1 class="font-bold text-5xl mt-4">
+          Go Pre-Order Buy & Get Best
+          <span class="text-blue-600">Prices</span> For You!
+        </h1>
+        <p class="mt-15 text-lg text-gray-700 font-semibold">
+          Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor
+          incididunt.
+        </p>
+        <button
+          class="py-3 px-5 text-white bg-red-400 mt-20 rounded-3xl font-bold text-lg"
+        >
+          Shop now
+        </button>
+      </div>
+      <div class="rounded-3xl w-120 bg-gray-100 p-20 place-self-end">
+        <p class="text-red-400 text-lg">NEWSLETTER</p>
+        <h1 class="font-bold text-5xl mt-4">
+          Get Up To $100 Off Just Buy
+          <span class="text-blue-600">Subscribe</span> Newsletter!
+        </h1>
+        <div class="flex justify-between rounded-3xl w-90 bg-white mt-5">
+            <input type="text" placeholder="Your email" class="px-10 w-1/2 py-2 ">
+            <button class="rounded-3xl text-white bg-red-400 px-6 py-2 items-center">Subscribe now</button>
+        </div>
+      </div>
     </div>
+    <img
+      src="./images/cta-bg.jpg.jpeg"
+      alt=""
+      class="mx-auto my-40 rounded-3xl"
+    />
+    <!-- footer -->
 
+    <div
+      class="bg-[url('./images/footer-bg.jpeg')] pb-20 pt-5 rounded-t-full mt-80 text-white text-center"
+    >
+      <p class="">
+        Copyright © 2048 LUGX Gaming Company. All rights reserved. Design:
+        TemplateMo
+      </p>
+    </div>
   </body>
 </html>
