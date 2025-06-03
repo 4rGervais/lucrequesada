@@ -9,11 +9,11 @@
   <body class="mx-auto">
     <!-- top nav -->
     <div
-      class="bg-[url('./images/banner-bg.jpg.jpeg')] bg-[cover] px-20 pt-10 pb-40 rounded-b-[10rem]"
+      class="bg-[url('./images/banner-bg.jpg.jpeg')] bg-[cover] px-10 lg:px-20 pt-10 pb-40 rounded-b-[10rem]"
     >
-      <div class="flex justify-between">
+      <div class="flex flex-wrap justify-between">
         <img src="./images/logo.png" alt="Company logo" />
-        <ul class="flex items-center justify-between w-1/2 text-white">
+        <ul class="hidden lg:flex items-center justify-between w-1/2 text-white">
           <li class="bg-white/18 py-2 px-4 rounded-3xl">Home</li>
           <li class="hover:bg-white/18 py-2 px-3 rounded-3xl">Our shop</li>
           <li class="hover:bg-white/18 py-2 px-3 rounded-3xl">
@@ -26,26 +26,27 @@
             </button>
           </li>
         </ul>
+        <img src="./images/menu.png" alt="Menu icon" class="lg:hidden w-10 h-10 cursor-pointer">
       </div>
-      <div class="flex justify-between mt-20 pt-10">
-        <div class="text-white">
+      <div class="flex flex-wrap lg:flex-nowrap justify-between mt-20 pt-10">
+        <div class="text-white text-center lg:text-left">
           <p class="font-semibold text-lg py-5 tracking-wide">
             WELCOME TO LUGX
           </p>
-          <h1 class="font-black text-5xl w-2/3">
+          <h1 class="font-black text-5xl lg:w-2/3 mx-auto lg:mx-0">
             BEST GAMING SITE EVER!
             <img src="./images/caption-dec.png" class="ml-20 pl-10" alt="" />
           </h1>
-          <p class="w-2/3 leading-7 mt-10">
+          <p class="w-80 lg:w-2/3 leading-7 mt-10 mx-auto lg:mx-0">
             LUGX Gaming is free bootstrap 5 HTML CSS website template for your
             gaming websites. You can download and use tihs layout for
             commerscial purposes. Please tell your friends about TemplateMO
           </p>
-          <div class="rounded-3xl mt-20 bg-white flex justify-between w-3/4">
+          <div class="rounded-3xl mt-20 bg-white flex w-80 lg:w-3/4">
             <input
               type="text"
               placeholder="Try something"
-              class="rounded-l-3xl px-10 py-3 text-black"
+              class="rounded-l-3xl px-10 py-3 w-50 text-black"
             />
             <button
               class="bg-red-400 hover:bg-blue-500 px-10 py-3 rounded-3xl font-bold"
@@ -54,19 +55,19 @@
             </button>
           </div>
         </div>
-        <div class="w-160">
+        <div class="w-120 lg:w-160">
           <div
-            class="bg-[url('./images/banner-image.jpg.jpeg')] bg-cover w-120 h-120 rounded-3xl flex"
+            class="bg-[url('./images/banner-image.jpg.jpeg')] bg-cover lg:mx-auto mt-10 lg:mt-0 w-80 lg:w-100 h-120 rounded-3xl flex"
           >
             <p
-              class="font-extrabold absolute right-20 mr-5 mt-5 bg-blue-500 font-black text-xl px-4 py-2 rounded-3xl text-white"
+              class="font-extrabold absolute right-20 -mr-5 lg:mr-5 mt-5 bg-blue-500 font-black text-xl px-4 py-2 rounded-3xl text-white"
             >
               $22
             </p>
           </div>
 
           <p
-            class="bg-red-400 rounded-full py-10 px-5 text-center font-black text-3xl text-white absolute -mt-15 -ml-15"
+            class="bg-red-400 rounded-full py-10 px-5 text-center font-black text-3xl text-white absolute -mt-32 ml-2 lg:-mt-15 lg:-ml-15"
           >
             -40%
           </p>
@@ -74,8 +75,8 @@
       </div>
     </div>
     <!-- direction icons -->
-    <div class="flex justify-between py-20 mx-20 -mt-40">
-      <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+    <div class="flex flex-wrap justify-between py-20 mx-5 lg:mx-20 -mt-40 gap-10">
+      <div class="rounded-2xl shadow-xl bg-white px-10 py-10 text-center w-80 lg:w-60 lg:text-left mx-auto">
         <img
           src="./images/featured-01.png"
           class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5"
@@ -83,7 +84,7 @@
         />
         <h1 class="font-extrabold pt-5 px-5">Free download</h1>
       </div>
-      <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+      <div class="rounded-2xl shadow-xl bg-white px-10 py-10 text-center w-80 lg:w-60 lg:text-left mx-auto">
         <img
           src="./images/featured-02.png"
           class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5"
@@ -91,7 +92,7 @@
         />
         <h1 class="font-extrabold pt-5 px-5">User More</h1>
       </div>
-      <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+      <div class="rounded-2xl shadow-xl bg-white px-10 py-10 text-center w-80 lg:w-60 lg:text-left mx-auto">
         <img
           src="./images/featured-03.png"
           class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5"
@@ -99,7 +100,7 @@
         />
         <h1 class="font-extrabold pt-5 px-5">Reply ready</h1>
       </div>
-      <div class="rounded-2xl shadow-xl bg-white px-10 py-10">
+      <div class="rounded-2xl shadow-xl bg-white px-10 py-10 text-center w-80 lg:w-60 lg:text-left mx-auto">
         <img
           src="./images/featured-04.png"
           class="mx-auto bg-blue-600 hover:bg-red-400 rounded-full p-5"
@@ -111,20 +112,20 @@
 
     <!-- treding games -->
 
-    <div class="flex justify-between px-20 mt-20">
+    <div class="flex justify-between px-10 lg:px-20 mt-10 lg:mt-20">
       <div class="">
         <p class="text-red-500 font-extrabold tracking-wider">Trending</p>
         <h1 class="font-black text-4xl pt-5">Trending Games</h1>
       </div>
       <button
-        class="px-10 h-10 self-end bg-red-400 rounded-full text-white hover:bg-blue-600 font-bold"
+        class="px-10 h-10 self-end bg-red-400 rounded-full text-white hover:bg-blue-600 font-bold hidden lg:block"
       >
         View
       </button>
     </div>
 
-    <div class="flex flex-wrap justify-between pt-20 mx-20">
-      <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+    <div class="flex flex-wrap justify-between pt-20 mx-5 lg:mx-20 gap-10">
+      <div class="rounded-2xl shadow-xl w-80 lg:w-60 mx-auto group bg-gray-200">
         <div class="flex">
           <img
             src="./images/categories-05.jpg.jpeg"
@@ -132,7 +133,7 @@
             alt="free download"
           />
           <p
-            class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
+            class="font-extrabold absolute ml-60 lg:ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
           >
             <strike>$28</strike><br />$22
           </p>
@@ -151,7 +152,7 @@
           />
         </div>
       </div>
-      <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+      <div class="rounded-2xl shadow-xl w-80 lg:w-60 mx-auto group bg-gray-200">
         <div class="flex">
           <img
             src="./images/categories-05.jpg.jpeg"
@@ -159,7 +160,7 @@
             alt="free download"
           />
           <p
-            class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
+            class="font-extrabold absolute ml-60 lg:ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
           >
             $22
           </p>
@@ -178,7 +179,7 @@
           />
         </div>
       </div>
-      <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+      <div class="rounded-2xl shadow-xl w-80 lg:w-60 mx-auto group bg-gray-200">
         <div class="flex">
           <img
             src="./images/categories-05.jpg.jpeg"
@@ -186,7 +187,7 @@
             alt="free download"
           />
           <p
-            class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
+            class="font-extrabold absolute ml-60 lg:ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
           >
             $22
           </p>
@@ -205,7 +206,7 @@
           />
         </div>
       </div>
-      <div class="rounded-2xl shadow-xl w-60 group bg-gray-200">
+      <div class="rounded-2xl shadow-xl w-80 lg:w-60 mx-auto group bg-gray-200">
         <div class="flex">
           <img
             src="./images/categories-05.jpg.jpeg"
@@ -213,7 +214,7 @@
             alt="free download"
           />
           <p
-            class="font-extrabold absolute ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
+            class="font-extrabold absolute ml-60 lg:ml-40 mt-5 bg-blue-500 px-4 py-2 rounded-xl text-white"
           >
             $22
           </p>
@@ -236,21 +237,21 @@
 
     <!-- most played -->
 
-    <div class="rounded-[10rem] bg-gray-100 py-10 mt-40">
-      <div class="flex justify-between px-20 mt-20">
+    <div class="rounded-[10rem] bg-gray-100 py-10 mt-20 lg:mt-40">
+      <div class="flex justify-between px-20 mt-20 text-center">
         <div class="">
           <p class="text-red-500 font-extrabold tracking-wider">Top Games</p>
           <h1 class="font-black text-4xl pt-5">Most played</h1>
         </div>
         <button
-          class="px-10 h-10 self-end bg-red-400 rounded-full text-white hover:bg-blue-600 font-bold"
+          class="px-10 h-10 self-end bg-red-400 rounded-full text-white hover:bg-blue-600 font-bold hidden lg:block"
         >
           View All
         </button>
       </div>
 
-      <div class="flex flex-wrap justify-between my-20 mx-20">
-        <div class="rounded-2xl shadow-xl w-40 group bg-white">
+      <div class="flex flex-wrap justify-between my-20 mx-5 lg:mx-20 gap-10 lg:gap-1">
+        <div class="rounded-2xl shadow-xl mx-auto w-80 lg:w-39 group bg-white">
           <div class="flex">
             <img
               src="./images/categories-05.jpg.jpeg"
@@ -270,7 +271,7 @@
             </button>
           </div>
         </div>
-        <div class="rounded-2xl shadow-xl w-40 group bg-white">
+        <div class="rounded-2xl shadow-xl mx-auto w-80 lg:w-39 group bg-white">
           <div class="flex">
             <img
               src="./images/cta-bg.jpg.jpeg"
@@ -290,7 +291,7 @@
             </button>
           </div>
         </div>
-        <div class="rounded-2xl shadow-xl w-40 group bg-white">
+        <div class="rounded-2xl shadow-xl mx-auto w-80 lg:w-39 group bg-white">
           <div class="flex">
             <img
               src="./images/top-game-03.jpg.jpeg"
@@ -310,7 +311,7 @@
             </button>
           </div>
         </div>
-        <div class="rounded-2xl shadow-xl w-40 group bg-white">
+        <div class="rounded-2xl shadow-xl mx-auto w-80 lg:w-39 group bg-white">
           <div class="flex">
             <img
               src="./images/top-game-04.jpg.jpeg"
@@ -330,7 +331,7 @@
             </button>
           </div>
         </div>
-        <div class="rounded-2xl shadow-xl w-40 group bg-white">
+        <div class="rounded-2xl shadow-xl mx-auto w-80 lg:w-39 group bg-white">
           <div class="flex">
             <img
               src="./images/top-game-05.jpg.jpeg"
@@ -350,7 +351,7 @@
             </button>
           </div>
         </div>
-        <div class="rounded-2xl shadow-xl w-40 group bg-white">
+        <div class="rounded-2xl shadow-xl mx-auto w-80 lg:w-39 group bg-white">
           <div class="flex">
             <img
               src="./images/top-game-06.jpg.jpeg"
@@ -380,9 +381,9 @@
       <h1 class="font-black text-4xl pt-5">Trending Games</h1>
     </div>
 
-    <div class="flex flex-wrap justify-between pt-20 mx-20">
+    <div class="flex flex-wrap justify-between pt-20 mx-5 lg:mx-20 gap-5">
       <div
-        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+        class="flex flex-col justify-between rounded-2xl w-80 lg:w-1/6 mx-auto group bg-blue-600 text-center"
       >
         <h1 class="text-white font-bold mt-5">Action</h1>
         <img
@@ -392,7 +393,7 @@
         />
       </div>
       <div
-        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+        class="flex flex-col justify-between rounded-2xl w-80 lg:w-1/6 mx-auto group bg-blue-600 text-center"
       >
         <h1 class="text-white font-bold mt-5">Action</h1>
         <img
@@ -402,7 +403,7 @@
         />
       </div>
       <div
-        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+        class="flex flex-col justify-between rounded-2xl w-80 lg:w-1/6 mx-auto group bg-blue-600 text-center"
       >
         <h1 class="text-white font-bold mt-5">Action</h1>
         <img
@@ -412,7 +413,7 @@
         />
       </div>
       <div
-        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+        class="flex flex-col justify-between rounded-2xl w-80 lg:w-1/6 mx-auto group bg-blue-600 text-center"
       >
         <h1 class="text-white font-bold mt-5">Action</h1>
         <img
@@ -422,7 +423,7 @@
         />
       </div>
       <div
-        class="flex flex-col justify-between rounded-2xl w-1/6 group bg-blue-600 text-center"
+        class="flex flex-col justify-between rounded-2xl w-80 lg:w-1/6 mx-auto group bg-blue-600 text-center"
       >
         <h1 class="text-white font-bold mt-5">Action</h1>
         <img
@@ -434,8 +435,8 @@
     </div>
 
     <!-- shop -->
-    <div class="flex flex-row absolute gap-36 mt-60 px-20">
-      <div class="rounded-3xl w-120 bg-gray-100 px-15 py-20">
+    <div class="flex flex-wrap lg:absolute gap-10 lg:gap-36 mt-60 px-5 lg:px-20">
+      <div class="rounded-3xl w-full lg:w-2/5 bg-gray-100 px-15 py-20">
         <p class="text-red-400 text-lg">our shop</p>
         <h1 class="font-bold text-5xl mt-4">
           Go Pre-Order Buy & Get Best
@@ -451,13 +452,13 @@
           Shop now
         </button>
       </div>
-      <div class="rounded-3xl w-120 bg-gray-100 px-15 py-20 place-self-end">
+      <div class="rounded-3xl w-full lg:w-2/5 bg-gray-100 px-10 lg:px-15 py-20 place-self-end">
         <p class="text-red-400 text-lg">NEWSLETTER</p>
         <h1 class="font-bold text-5xl mt-4">
           Get Up To $100 Off Just Buy
           <span class="text-blue-600">Subscribe</span> Newsletter!
         </h1>
-        <div class="flex justify-between rounded-3xl w-90 bg-white mt-5">
+        <div class="flex justify-between rounded-3xl text-sm bg-white mt-5">
           <input
             type="text"
             placeholder="Your email"
@@ -474,12 +475,12 @@
     <img
       src="./images/cta-bg.jpg.jpeg"
       alt=""
-      class="mx-auto my-40 rounded-3xl"
+      class="mx-auto my-40 rounded-3xl hidden lg:block"
     />
     <!-- footer -->
 
     <div
-      class="bg-[url('./images/footer-bg.jpeg')] pb-20 pt-5 rounded-t-full mt-80 text-white text-center"
+      class="bg-[url('./images/footer-bg.jpeg')] pb-20 pt-10 rounded-t-full mt-20 lg:mt-80 text-white leading-20 text-center"
     >
       <p class="">
         Copyright © 2048 LUGX Gaming Company. All rights reserved. Design:
